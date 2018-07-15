@@ -1,4 +1,4 @@
-package org.learning.springboot.containters.config;
+package org.learning.springboot.config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org.learning.springboot.containters.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("org.learning.springboot.containters.api"))
 //                .paths(regex("/product.*"))
                 .build();
     }*/

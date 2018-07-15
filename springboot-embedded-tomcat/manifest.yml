@@ -1,0 +1,6 @@
+---
+applications:
+- name: my-springboot-jersey-pcf
+  memory: 512M
+  instances: 1
+  path: ./target/springboot-embedded-tomcat-1.0-SNAPSHOT.jar
